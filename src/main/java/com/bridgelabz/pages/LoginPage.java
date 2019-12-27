@@ -3,7 +3,6 @@ package com.bridgelabz.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.bridgelabz.base.Base;
 
 public class LoginPage extends Base {
@@ -15,15 +14,31 @@ public class LoginPage extends Base {
 	@FindBy(xpath = "//span[@class='mat-button-wrapper']")
 	WebElement googleLogin;
 
-	@FindBy(id = "identifierId")
+	@FindBy(xpath = "//input[@id='identifierId']")
 	WebElement email;
 
-	@FindBy(xpath = "//div[@id='identifierNext']//span[@class='CwaK9']")
-	WebElement emailnext;
+	@FindBy(xpath = "//div[@id='identifierNext']")
+	WebElement emailNext;
 
 	@FindBy(xpath = "//input[@name='password']")
 	WebElement password;
 
-	@FindBy(xpath = "//span[contains(text(),'Next')]")
+	@FindBy(xpath = "//div[@id='passwordNext']")
 	WebElement passwordNext;
+
+	public DashboardPage login() {
+
+		googleLogin.click();
+		String parentWindow = driver.getWindowHandle();
+		for (String handle : driver.getWindowHandles()) {
+			driver.switchTo().window(handle);
+		}
+		email.sendKeys(properties.getProperty("email"));
+		emailNext.click();
+		password.sendKeys(properties.getProperty("password"));
+		passwordNext.click();
+		driver.switchTo().window(parentWindow);
+		return new DashboardPage();
+	}
+
 }

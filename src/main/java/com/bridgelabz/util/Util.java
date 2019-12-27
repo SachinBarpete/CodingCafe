@@ -10,7 +10,7 @@ import com.bridgelabz.base.Base;
 public class Util extends Base {
 
 	public static long PAGE_LOAD_TIME = 45;
-	public static long IMPLICIT_WAIT_TIME = 20;
+	public static long IMPLICIT_WAIT_TIME = 30;
 
 	public static void takeScreenshot() {
 		File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
