@@ -1,15 +1,17 @@
 package com.bridgelabz.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import com.bridgelabz.base.Base;
 
 public class CampaignPage extends Base {
 
 	public CampaignPage() {
+		super();
 		PageFactory.initElements(driver, this);
 	}
 
@@ -37,7 +39,7 @@ public class CampaignPage extends Base {
 	@FindBy(xpath = "//button[contains(text(),'Institutions')]")
 	WebElement addInstitutions;
 
-	@FindBy(xpath = "//div[@class='mat-radio-label-content'][contains(text(),'Online Campaign')]")
+	@FindBy(xpath = "//div[contains(text(),'Online Campaign')]")
 	WebElement selectOnlineCampaign;
 
 	@FindBy(xpath = "//div[@class='mat-radio-label-content'][contains(text(),'Referral')]")
@@ -46,7 +48,7 @@ public class CampaignPage extends Base {
 	@FindBy(xpath = "//div[@class='mat-radio-label-content'][contains(text(),'Offline')]")
 	WebElement selectOffline;
 
-	@FindBy(xpath = "//input[@id='mat-input-85']")
+	@FindBy(xpath = "//input[@ng-reflect-maxlength =50]")
 	WebElement campaignName;
 
 	@FindBy(xpath = "//div[@class='mat-select-arrow-wrapper']")
@@ -76,14 +78,47 @@ public class CampaignPage extends Base {
 	@FindBy(xpath = "//span[contains(text(),'Submit')]")
 	WebElement submit;
 
-	public void addOnlineCampaign() {
+	public void addOnlineCampaign() throws InterruptedException {
+		Thread.sleep(500);
+		addCTA.click();
+		Thread.sleep(500);
 		addCampaign.click();
-		selectOnlineCampaign.click();
+		Thread.sleep(500);
 		campaignName.sendKeys(properties.getProperty("campaignName"));
+		Thread.sleep(500);
+		campaignPurpose.click();
+		selectRegistration.click();
+		creatorName.sendKeys(properties.getProperty("creatorName"));
+		shortName.sendKeys(properties.getProperty("shortName"));
+		startDate.click();
+		String date = "30-DEC-2019";
+		String dateArray[] = date.split("-");
+		String day = dateArray[0];
+		String month = dateArray[1];
+		String year = dateArray[2];
 
-		Select selectCampaignPurpose = new Select(campaignPurpose);
-		selectCampaignPurpose.selectByVisibleText(properties.getProperty("campaignPurpose"));
+		boolean flag = false;
+		String dayValue = null;
+		for (int rowNum = 2; rowNum <= 7; rowNum++) {
+			for (int colNum = 1; colNum <= 7; colNum++) {
+				try {
+					dayValue = driver.findElement(By.xpath("//tr[" + rowNum + "]//td[" + colNum + "]//div[1]"))
+							.getText();
+				} catch (NoSuchElementException e) {
+					System.out.println("Please enter a correct date");
+				}
 
+				if (dayValue.equals(day)) {
+					driver.findElement(By.xpath("//tr[" + rowNum + "]//td[" + colNum + "]//div[1]")).click();
+					flag = true;
+					break;
+				}
+			}
+			if (flag)
+				break;
+		}
+
+		Thread.sleep(5000);
 	}
 
 	public void addReferral() {

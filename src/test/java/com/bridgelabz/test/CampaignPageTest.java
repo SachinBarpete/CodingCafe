@@ -1,19 +1,21 @@
 package com.bridgelabz.test;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.bridgelabz.base.Base;
+import com.bridgelabz.pages.CampaignPage;
 import com.bridgelabz.pages.DashboardPage;
 import com.bridgelabz.pages.LoginPage;
 
-public class DashboardPageTest extends Base {
+public class CampaignPageTest extends Base {
+
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
+	CampaignPage campaignPage;
 
-	public DashboardPageTest() {
+	public CampaignPageTest() {
 		super();
 	}
 
@@ -25,28 +27,9 @@ public class DashboardPageTest extends Base {
 	}
 
 	@Test
-	public void dashBordPageTitleTest() {
-		Assert.assertEquals(dashboardPage.getDashboardPageTitle(), "CodingCafe", "Title is not matched");
-	}
-
-	@Test
-	public void campaignLinkTest() {
-		dashboardPage.campaignLink();
-	}
-
-	@Test
-	public void collegeLinkTest() {
-		dashboardPage.collegeLink();
-	}
-
-	@Test
-	public void driveLinkTest() {
-		dashboardPage.driveLink();
-	}
-
-	@Test
-	public void SettingsLinkTest() {
-		dashboardPage.settingsLink();
+	public void addOnlineCampaignTest() throws InterruptedException {
+		campaignPage = dashboardPage.campaignLink();
+		campaignPage.addOnlineCampaign();
 	}
 
 	@AfterMethod

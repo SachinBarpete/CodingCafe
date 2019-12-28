@@ -28,7 +28,7 @@ public class DashboardPage extends Base {
 	}
 
 	public CampaignPage campaignLink() {
-		campaign.click();
+		campaign.isEnabled();
 		return new CampaignPage();
 	}
 
