@@ -27,7 +27,6 @@ public class LoginPage extends Base {
 	WebElement passwordNext;
 
 	public DashboardPage login() {
-
 		googleLogin.click();
 		String parentWindow = driver.getWindowHandle();
 		for (String handle : driver.getWindowHandles()) {

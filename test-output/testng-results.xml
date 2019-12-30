@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-28T19:20:17 IST" name="Default suite" finished-at="2019-12-28T19:20:43 IST" duration-ms="26171">
+  <suite started-at="2019-12-30T19:13:49 IST" name="Default suite" finished-at="2019-12-30T19:14:12 IST" duration-ms="22980">
     <groups>
     </groups>
-    <test started-at="2019-12-28T19:20:17 IST" name="Default test" finished-at="2019-12-28T19:20:43 IST" duration-ms="26171">
-      <class name="com.bridgelabz.test.CampaignPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.CampaignPageTest@2b4bac49]" started-at="2019-12-28T19:20:17 IST" name="setUp" finished-at="2019-12-28T19:20:29 IST" duration-ms="12352" status="PASS">
+    <test started-at="2019-12-30T19:13:49 IST" name="Default test" finished-at="2019-12-30T19:14:12 IST" duration-ms="22980">
+      <class name="com.bridgelabz.test.RegisterPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@2b4bac49]" started-at="2019-12-30T19:13:49 IST" name="setUp" finished-at="2019-12-30T19:14:05 IST" duration-ms="15700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addOnlineCampaignTest()[pri:0, instance:com.bridgelabz.test.CampaignPageTest@2b4bac49]" started-at="2019-12-28T19:20:29 IST" name="addOnlineCampaignTest" finished-at="2019-12-28T19:20:43 IST" duration-ms="13713" status="PASS">
+        <test-method signature="registrationTest()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@2b4bac49]" started-at="2019-12-30T19:14:05 IST" name="registrationTest" finished-at="2019-12-30T19:14:12 IST" duration-ms="7170" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addOnlineCampaignTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.CampaignPageTest@2b4bac49]" started-at="2019-12-28T19:20:43 IST" name="tearDown" finished-at="2019-12-28T19:20:43 IST" duration-ms="68" status="PASS">
+        </test-method> <!-- registrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@2b4bac49]" started-at="2019-12-30T19:14:12 IST" name="tearDown" finished-at="2019-12-30T19:14:12 IST" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.bridgelabz.test.CampaignPageTest -->
+      </class> <!-- com.bridgelabz.test.RegisterPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

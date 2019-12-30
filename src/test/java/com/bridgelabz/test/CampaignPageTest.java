@@ -27,9 +27,15 @@ public class CampaignPageTest extends Base {
 	}
 
 	@Test
-	public void addOnlineCampaignTest() throws InterruptedException {
+	public void addOnlineCampaignForRegistrationTest() throws InterruptedException {
 		campaignPage = dashboardPage.campaignLink();
-		campaignPage.addOnlineCampaign();
+		campaignPage.addOnlineCampaignForRegistration();
+	}
+
+	@Test
+	public void addOnlineCampaignForMCQTest() throws InterruptedException {
+		campaignPage = dashboardPage.campaignLink();
+		campaignPage.addOnlineCampaignForMCQ();
 	}
 
 	@AfterMethod

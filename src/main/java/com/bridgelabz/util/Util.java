@@ -2,6 +2,8 @@ package com.bridgelabz.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -41,11 +43,19 @@ public class Util extends Base {
 		}
 	}
 
-	public void getDate(String date, WebDriver driver) {
+	public static void selectDate(String date, WebDriver driver) throws InterruptedException {
+
 		String dateArray[] = date.split("-");
 		String day = dateArray[0];
 		String month = dateArray[1];
 		String year = dateArray[2];
+
+		String yearXpath = "//div[contains(text(),'" + year + "')]";
+		Thread.sleep(200);
+		driver.findElement(By.xpath(yearXpath)).click();
+		String monthXpath = "//div[contains(text(),'" + month + "')]";
+		Thread.sleep(200);
+		driver.findElement(By.xpath(monthXpath)).click();
 
 		boolean flag = false;
 		String dayValue = null;
@@ -55,9 +65,7 @@ public class Util extends Base {
 					dayValue = driver.findElement(By.xpath("//tr[" + rowNum + "]//td[" + colNum + "]//div[1]"))
 							.getText();
 				} catch (NoSuchElementException e) {
-					System.out.println("Please enter a correct date");
 				}
-
 				if (dayValue.equals(day)) {
 					driver.findElement(By.xpath("//tr[" + rowNum + "]//td[" + colNum + "]//div[1]")).click();
 					flag = true;
@@ -67,5 +75,9 @@ public class Util extends Base {
 			if (flag)
 				break;
 		}
+	}
+
+	public static void readOTP() {
+
 	}
 }
