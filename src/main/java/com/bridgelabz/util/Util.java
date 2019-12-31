@@ -2,8 +2,6 @@ package com.bridgelabz.util;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -77,7 +75,4 @@ public class Util extends Base {
 		}
 	}
 
-	public static void readOTP() {
-
-	}
 }

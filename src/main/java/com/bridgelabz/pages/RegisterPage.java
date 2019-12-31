@@ -45,6 +45,8 @@ public class RegisterPage extends Base {
 		otp.sendKeys("100");
 		Thread.sleep(500);
 		apply.click();
+		
+		
 		Thread.sleep(5000);
 	}
 

@@ -1,21 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-30T19:13:49 IST" name="Default suite" finished-at="2019-12-30T19:14:12 IST" duration-ms="22980">
+  <suite started-at="2019-12-31T12:32:15 IST" name="Default suite" finished-at="2019-12-31T12:32:26 IST" duration-ms="10496">
     <groups>
     </groups>
-    <test started-at="2019-12-30T19:13:49 IST" name="Default test" finished-at="2019-12-30T19:14:12 IST" duration-ms="22980">
+    <test started-at="2019-12-31T12:32:15 IST" name="Default test" finished-at="2019-12-31T12:32:26 IST" duration-ms="10496">
       <class name="com.bridgelabz.test.RegisterPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@2b4bac49]" started-at="2019-12-30T19:13:49 IST" name="setUp" finished-at="2019-12-30T19:14:05 IST" duration-ms="15700" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@11c9af63]" started-at="2019-12-31T12:32:15 IST" name="setUp" finished-at="2019-12-31T12:32:26 IST" duration-ms="10432" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'admin-desktop', ip: '192.168.0.197', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.DmoHtX}, goog:chromeOptions: {debuggerAddress: localhost:35417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 81b4d109e107db0af7bf5fee525fbaa1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'admin-desktop', ip: '192.168.0.197', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.DmoHtX}, goog:chromeOptions: {debuggerAddress: localhost:35417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 81b4d109e107db0af7bf5fee525fbaa1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+at com.bridgelabz.test.RegisterPageTest.setUp(RegisterPageTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registrationTest()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@2b4bac49]" started-at="2019-12-30T19:14:05 IST" name="registrationTest" finished-at="2019-12-30T19:14:12 IST" duration-ms="7170" status="PASS">
+        <test-method signature="registrationTest()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@11c9af63]" started-at="2019-12-31T12:32:26 IST" name="registrationTest" finished-at="2019-12-31T12:32:26 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'admin-desktop', ip: '192.168.0.197', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.DmoHtX}, goog:chromeOptions: {debuggerAddress: localhost:35417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 81b4d109e107db0af7bf5fee525fbaa1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'admin-desktop', ip: '192.168.0.197', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.DmoHtX}, goog:chromeOptions: {debuggerAddress: localhost:35417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 81b4d109e107db0af7bf5fee525fbaa1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+at com.bridgelabz.test.RegisterPageTest.setUp(RegisterPageTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@2b4bac49]" started-at="2019-12-30T19:14:12 IST" name="tearDown" finished-at="2019-12-30T19:14:12 IST" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@11c9af63]" started-at="2019-12-31T12:32:26 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1577775746220" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
