@@ -105,13 +105,13 @@ public class CampaignPage extends Base {
 		startDate.click();
 		Thread.sleep(200);
 		selectDate.click();
-		String startDate = "31-DEC-2019";
+		String startDate = "6-JAN-2020";
 		Util.selectDate(startDate, driver);
 
 		endDate.click();
 		Thread.sleep(200);
 		selectDate.click();
-		String endDate = "5-JAN-2020";
+		String endDate = "15-JAN-2020";
 		Util.selectDate(endDate, driver);
 		// submit.click();
 		Thread.sleep(2000);
@@ -133,13 +133,13 @@ public class CampaignPage extends Base {
 		startDate.click();
 		Thread.sleep(200);
 		selectDate.click();
-		String startDate = "31-DEC-2019";
+		String startDate = "6-JAN-2020";
 		Util.selectDate(startDate, driver);
 
 		endDate.click();
 		Thread.sleep(200);
 		selectDate.click();
-		String endDate = "5-JAN-2020";
+		String endDate = "15-JAN-2020";
 		Util.selectDate(endDate, driver);
 		Thread.sleep(200);
 		questionSetFormat.click();

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Web Application Test Automation Suite">
+
+	<listeners>
+		<listener
+			class-name="com.bridgelabz.extentreport.ExtentReportListener" />
+	</listeners>
+
+	<test name="Coding Cafe test cases">
+		<classes>
+			<class name="com.bridgelabz.test.LoginPageTest" />
+			<class name="com.bridgelabz.test.DashboardPageTest" />
+			<class name="com.bridgelabz.test.CampaignPageTest" />
+			<class name="com.bridgelabz.test.RegisterPageTest" />
+		</classes>
+	</test>
+</suite>

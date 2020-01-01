@@ -41,7 +41,6 @@ public class ExtentReportListener implements IReporter {
 				buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
 			}
 		}
-
 		extent.flush();
 		extent.close();
 	}
@@ -68,7 +67,6 @@ public class ExtentReportListener implements IReporter {
 				} else {
 					test.log(status, "Test " + status.toString().toLowerCase() + "ed");
 				}
-
 				extent.endTest(test);
 			}
 		}

@@ -1,157 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-31T12:32:15 IST" name="Default suite" finished-at="2019-12-31T12:32:26 IST" duration-ms="10496">
+  <suite started-at="2020-01-01T12:05:08 IST" name="Web Application Test Automation Suite" finished-at="2020-01-01T12:07:54 IST" duration-ms="166368">
     <groups>
     </groups>
-    <test started-at="2019-12-31T12:32:15 IST" name="Default test" finished-at="2019-12-31T12:32:26 IST" duration-ms="10496">
-      <class name="com.bridgelabz.test.RegisterPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@11c9af63]" started-at="2019-12-31T12:32:15 IST" name="setUp" finished-at="2019-12-31T12:32:26 IST" duration-ms="10432" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=79.0.3945.88)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'admin-desktop', ip: '192.168.0.197', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.DmoHtX}, goog:chromeOptions: {debuggerAddress: localhost:35417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 81b4d109e107db0af7bf5fee525fbaa1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=79.0.3945.88)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'admin-desktop', ip: '192.168.0.197', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.DmoHtX}, goog:chromeOptions: {debuggerAddress: localhost:35417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 81b4d109e107db0af7bf5fee525fbaa1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
-at com.bridgelabz.test.RegisterPageTest.setUp(RegisterPageTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+    <test started-at="2020-01-01T12:05:08 IST" name="Coding Cafe test cases" finished-at="2020-01-01T12:07:54 IST" duration-ms="166368">
+      <class name="com.bridgelabz.test.DashboardPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:05:21 IST" name="setUp" finished-at="2020-01-01T12:05:34 IST" duration-ms="12540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registrationTest()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@11c9af63]" started-at="2019-12-31T12:32:26 IST" name="registrationTest" finished-at="2019-12-31T12:32:26 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=79.0.3945.88)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'admin-desktop', ip: '192.168.0.197', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.DmoHtX}, goog:chromeOptions: {debuggerAddress: localhost:35417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 81b4d109e107db0af7bf5fee525fbaa1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=79.0.3945.88)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'admin-desktop', ip: '192.168.0.197', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-25-generic', java.version: '11.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.DmoHtX}, goog:chromeOptions: {debuggerAddress: localhost:35417}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 81b4d109e107db0af7bf5fee525fbaa1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
-at com.bridgelabz.test.RegisterPageTest.setUp(RegisterPageTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="SettingsLinkTest()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:05:34 IST" name="SettingsLinkTest" finished-at="2020-01-01T12:05:40 IST" duration-ms="6293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingsLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:05:40 IST" name="tearDown" finished-at="2020-01-01T12:05:40 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:05:40 IST" name="setUp" finished-at="2020-01-01T12:05:52 IST" duration-ms="12428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="campaignLinkTest()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:05:52 IST" name="campaignLinkTest" finished-at="2020-01-01T12:05:57 IST" duration-ms="4340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campaignLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:05:57 IST" name="tearDown" finished-at="2020-01-01T12:05:57 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:05:57 IST" name="setUp" finished-at="2020-01-01T12:06:09 IST" duration-ms="12386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="collegeLinkTest()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:06:09 IST" name="collegeLinkTest" finished-at="2020-01-01T12:06:14 IST" duration-ms="4465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collegeLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:06:14 IST" name="tearDown" finished-at="2020-01-01T12:06:14 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:06:14 IST" name="setUp" finished-at="2020-01-01T12:06:27 IST" duration-ms="13097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dashBordPageTitleTest()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:06:27 IST" name="dashBordPageTitleTest" finished-at="2020-01-01T12:06:27 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashBordPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:06:27 IST" name="tearDown" finished-at="2020-01-01T12:06:27 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:06:27 IST" name="setUp" finished-at="2020-01-01T12:06:40 IST" duration-ms="12865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="driveLinkTest()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:06:40 IST" name="driveLinkTest" finished-at="2020-01-01T12:06:44 IST" duration-ms="4229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driveLinkTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.DashboardPageTest@671a5887]" started-at="2020-01-01T12:06:44 IST" name="tearDown" finished-at="2020-01-01T12:06:44 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bridgelabz.test.DashboardPageTest -->
+      <class name="com.bridgelabz.test.CampaignPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.CampaignPageTest@5552768b]" started-at="2020-01-01T12:06:44 IST" name="setUp" finished-at="2020-01-01T12:06:57 IST" duration-ms="12524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addOnlineCampaignForMCQTest()[pri:0, instance:com.bridgelabz.test.CampaignPageTest@5552768b]" started-at="2020-01-01T12:06:57 IST" name="addOnlineCampaignForMCQTest" finished-at="2020-01-01T12:07:10 IST" duration-ms="13732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOnlineCampaignForMCQTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.CampaignPageTest@5552768b]" started-at="2020-01-01T12:07:10 IST" name="tearDown" finished-at="2020-01-01T12:07:11 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.CampaignPageTest@5552768b]" started-at="2020-01-01T12:07:11 IST" name="setUp" finished-at="2020-01-01T12:07:23 IST" duration-ms="12595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addOnlineCampaignForRegistrationTest()[pri:0, instance:com.bridgelabz.test.CampaignPageTest@5552768b]" started-at="2020-01-01T12:07:23 IST" name="addOnlineCampaignForRegistrationTest" finished-at="2020-01-01T12:07:35 IST" duration-ms="12273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOnlineCampaignForRegistrationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.CampaignPageTest@5552768b]" started-at="2020-01-01T12:07:35 IST" name="tearDown" finished-at="2020-01-01T12:07:35 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bridgelabz.test.CampaignPageTest -->
+      <class name="com.bridgelabz.test.RegisterPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@3c947bc5]" started-at="2020-01-01T12:07:35 IST" name="setUp" finished-at="2020-01-01T12:07:47 IST" duration-ms="11666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registrationTest()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@3c947bc5]" started-at="2020-01-01T12:07:47 IST" name="registrationTest" finished-at="2020-01-01T12:07:54 IST" duration-ms="7109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@11c9af63]" started-at="2019-12-31T12:32:26 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1577775746220" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.RegisterPageTest@3c947bc5]" started-at="2020-01-01T12:07:54 IST" name="tearDown" finished-at="2020-01-01T12:07:54 IST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.bridgelabz.test.RegisterPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.bridgelabz.test.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bridgelabz.test.LoginPageTest@87a85e1]" started-at="2020-01-01T12:05:08 IST" name="setUp" finished-at="2020-01-01T12:05:18 IST" duration-ms="9819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:com.bridgelabz.test.LoginPageTest@87a85e1]" started-at="2020-01-01T12:05:18 IST" name="loginTest" finished-at="2020-01-01T12:05:21 IST" duration-ms="3248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.bridgelabz.test.LoginPageTest@87a85e1]" started-at="2020-01-01T12:05:21 IST" name="tearDown" finished-at="2020-01-01T12:05:21 IST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.bridgelabz.test.LoginPageTest -->
+    </test> <!-- Coding Cafe test cases -->
+  </suite> <!-- Web Application Test Automation Suite -->
 </testng-results>
