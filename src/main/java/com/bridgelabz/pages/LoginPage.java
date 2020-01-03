@@ -5,6 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.bridgelabz.base.Base;
 
+/**
+ * @author Sachin Barpete
+ * @purpose Implemented test method for Login to coding cafe
+ */
 public class LoginPage extends Base {
 
 	public LoginPage() {

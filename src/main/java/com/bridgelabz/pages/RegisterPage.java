@@ -6,6 +6,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.bridgelabz.base.Base;
 
+/**
+ * @author Sachin Barpete
+ * @purpose Implemented test methods for Register 
+ */
 public class RegisterPage extends Base {
 
 	public RegisterPage() {

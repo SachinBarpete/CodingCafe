@@ -6,6 +6,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.bridgelabz.base.Base;
 
+/**
+ * @author Sachin Barpete
+ * @purpose Implement test methods for Drive 
+ */
 public class DrivePage extends Base {
 
 	public DrivePage() {

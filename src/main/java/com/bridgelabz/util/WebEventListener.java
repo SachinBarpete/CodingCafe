@@ -11,7 +11,6 @@ import com.bridgelabz.base.Base;
 /**
  * @author : Sachin Barpete
  * @purpose : for taking the details of forgott password page from Application
- * 
  */
 public class WebEventListener extends Base implements WebDriverEventListener {
 

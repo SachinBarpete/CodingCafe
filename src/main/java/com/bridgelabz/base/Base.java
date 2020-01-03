@@ -10,6 +10,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import com.bridgelabz.util.Util;
 
+/**
+ * @author SachinBarpete
+ * @purpose for Initialize driver and properties file
+ */
 public class Base {
 
 	public static WebDriver driver;
@@ -27,6 +31,9 @@ public class Base {
 		}
 	}
 
+	/**
+	 * Initialize driver
+	 */
 	public void initialization() {
 		String browserName = properties.getProperty("browser");
 		if (browserName.equals("chrome")) {

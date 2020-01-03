@@ -11,6 +11,10 @@ import org.openqa.selenium.WebDriver;
 
 import com.bridgelabz.base.Base;
 
+/**
+ * @author Sachin Barpete
+ * @purpose utility for take screenshot and select calendar date
+ */
 public class Util extends Base {
 
 	public static long PAGE_LOAD_TIME = 50;

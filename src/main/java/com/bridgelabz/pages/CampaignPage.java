@@ -7,6 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 import com.bridgelabz.base.Base;
 import com.bridgelabz.util.Util;
 
+/**
+ * @author Sachin Barpete
+ * @purpose Implemented test methods for Campaign 
+ */
 public class CampaignPage extends Base {
 
 	public CampaignPage() {

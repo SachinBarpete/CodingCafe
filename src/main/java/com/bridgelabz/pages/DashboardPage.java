@@ -5,6 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.bridgelabz.base.Base;
 
+/**
+ * @author Sachin Barpete
+ * @purpose Implemented test methods for Dashboard 
+ */
 public class DashboardPage extends Base {
 
 	public DashboardPage() {
