@@ -6,6 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.bridgelabz.base.Base;
 
+/**
+ * @author Sachin Barpete
+ */
 public class MCQPage extends Base {
 
 	public MCQPage() {
