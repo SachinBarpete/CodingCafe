@@ -9,6 +9,10 @@ import com.bridgelabz.pages.CampaignPage;
 import com.bridgelabz.pages.DashboardPage;
 import com.bridgelabz.pages.LoginPage;
 
+/**
+ * @author SachinBarpete
+ * @purpose Tests for CampaignPage
+ */
 public class CampaignPageTest extends Base {
 
 	LoginPage loginPage;
@@ -23,7 +27,7 @@ public class CampaignPageTest extends Base {
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
-		dashboardPage = loginPage.login();
+		dashboardPage = loginPage.login()for Initialize driver and properties file;
 	}
 
 	@Test
