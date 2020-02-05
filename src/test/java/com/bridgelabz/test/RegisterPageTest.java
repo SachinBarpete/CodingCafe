@@ -9,7 +9,7 @@ import com.bridgelabz.pages.RegisterPage;
 
 /**
  * @author SachinBarpete
- * @purpose Tests for RegisterPageTest
+ * @purpose Tests for RegisterPage
  */
 public class RegisterPageTest extends Base {
 
