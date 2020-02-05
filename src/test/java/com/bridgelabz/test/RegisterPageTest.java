@@ -7,6 +7,10 @@ import org.testng.annotations.Test;
 import com.bridgelabz.base.Base;
 import com.bridgelabz.pages.RegisterPage;
 
+/**
+ * @author SachinBarpete
+ * @purpose Tests for RegisterPageTest
+ */
 public class RegisterPageTest extends Base {
 
 	RegisterPage registerPage;
