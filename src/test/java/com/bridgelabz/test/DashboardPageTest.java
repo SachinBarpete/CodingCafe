@@ -9,6 +9,10 @@ import com.bridgelabz.base.Base;
 import com.bridgelabz.pages.DashboardPage;
 import com.bridgelabz.pages.LoginPage;
 
+/**
+ * @author SachinBarpete
+ * @purpose Tests for DashboardPage
+ */
 public class DashboardPageTest extends Base {
 	LoginPage loginPage;
 	DashboardPage dashboardPage;
