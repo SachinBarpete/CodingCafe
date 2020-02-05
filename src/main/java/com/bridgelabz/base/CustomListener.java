@@ -14,7 +14,7 @@ public class CustomListener implements ITestListener {
 	/**
 	 * take screen shot for failure test case
 	 */
-	// @Override
+	@Override
 	public void onTestFailure(ITestResult result) {
 		Util.takeScreenshot(result.getMethod().getMethodName());
 	}
@@ -22,7 +22,7 @@ public class CustomListener implements ITestListener {
 	/**
 	 * take screen shot for skipped test case
 	 */
-	// @Override
+	@Override
 	public void onTestSkipped(ITestResult result) {
 		Util.takeScreenshot(result.getMethod().getMethodName());
 	}
